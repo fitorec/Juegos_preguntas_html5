@@ -572,5 +572,139 @@ var preguntas = [
 			},
 		]
 	},
+	// 26
+	{
+		pregunta: "Implementó sistemas de Orientación profesional en centros educativos:",
+		contestada: false,
+		respuestas: [
+			{
+				txt: "Quintiliano",
+				valida: false,
+			},
+			{
+				txt: 'Aristoteles',
+				valida: false,
+			},
+			{
+				txt: "Binet",
+				valida: false,
+			},
+			{
+				txt: "Pearson",
+				valida: true,
+			},
+		]
+	},
+	// 27
+	{
+		pregunta: "En este enfoque, el orientador tiene un repertorio de métodos de los cuales selecciona el más apropiado para el problema concreto:",
+		contestada: false,
+		respuestas: [
+			{
+				txt: "Existencial",
+				valida: false,
+			},
+			{
+				txt: 'Ecléctico',
+				valida: true,
+			},
+			{
+				txt: "Racional",
+				valida: false,
+			},
+			{
+				txt: "Psicoanalítico",
+				valida: true,
+			},
+		]
+	},
+	{
+		pregunta: "A qué tipo de orientación corresponden las siguientes características: Los estudios académicos se proyectan siempre hasta una profesión o línea de estudio; se deben tener en cuenta los agentes que puedan estar influyendo sobre las decisiones y realizaciones personales y vocacionales del individuo:",
+		contestada: false,
+		respuestas: [
+			{
+				txt: "Profesional",
+				valida: true,
+			},
+			{
+				txt: 'Escolar',
+				valida: false,
+			},
+			{
+				txt: "Familiar",
+				valida: false,
+			},
+			{
+				txt: "Vocacional",
+				valida: false,
+			},
+		]
+	},
+	{
+		pregunta: "Este tipo de orientación tiene las siguientes funciones: De ayuda: para que el individuo consiga su adaptación; informativa: sobre la situación personal y del entorno; asesoría y diagnóstico: intenta recoger datos de la personalidad del orientado:",
+		contestada: false,
+		respuestas: [
+			{
+				txt: "Profesional",
+				valida: false,
+			},
+			{
+				txt: 'Escolar',
+				valida: false,
+			},
+			{
+				txt: "Familiar",
+				valida: false,
+			},
+			{
+				txt: "Vocacional",
+				valida: true,
+			},
+		]
+	},
+	{
+		pregunta: "Orientación cuyo objeto de estudio son las personas en formación permanente:",
+		contestada: false,
+		respuestas: [
+			{
+				txt: "Profesional",
+				valida: true,
+			},
+			{
+				txt: 'Escolar',
+				valida: false,
+			},
+			{
+				txt: "Familiar",
+				valida: false,
+			},
+			{
+				txt: "Vocacional",
+				valida: false,
+			},
+		]
+	},
+	{
+		pregunta: "Tipo de orientación en que sus etapas son: Formación vocacional general; preparación para la selección secundaria; formación y desarrollo y consolidación de intereses y habilidades y  conocimientos:",
+		contestada: false,
+		respuestas: [
+			{
+				txt: 'Escolar',
+				valida: false,
+			},
+			{
+				txt: "Familiar",
+				valida: false,
+			},
+			{
+				txt: "Profesional",
+				valida: true,
+			},
+			{
+				txt: "Vocacional",
+				valida: false,
+			},
+		]
+	},
 ////////////////////////////////////////////////////////////
 ];
