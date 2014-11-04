@@ -1,9 +1,8 @@
 /*
  * Script Juego jugar
  */
-var equipoIndex = 0;
-var actual = 0;
-var preguntaActual = 0;
+var index = 0;
+
 /*
  *
  */
@@ -21,7 +20,8 @@ $(function() {
 			// Se encarga de encontrar de forma aleatoria una pregunta no contestada
 			var key;
 			do {
-				key = getRandomInt(0, numPreguntas -1);
+				//key = getRandomInt(0, numPreguntas -1);
+				key = index++;
 			} while(preguntas[key].contestada == true);
 			console.log('Indice actual: ' + key);
 
@@ -41,10 +41,6 @@ $(function() {
 			++preguntasContestadas;
 			$('#preguntaActual').text(preguntasContestadas);
 			if (preguntasContestadas == numPreguntas) {
-				/*alert(
-					'Ha respondido ' + preguntasContestadas + ', de un total de '
-					+ numPreguntas +' jueguito ha concluido, :¬D'
-				);*/
 				$('#mostrarPregunta button')
 					.removeClass('btn-primary')
 					.addClass('disabled ')
@@ -97,11 +93,9 @@ function validarRespuesta() {
 			if(error) {
 				numCorrectas = parseInt($('#numRespuestasIncorrectas').text()) + 1;
 				$('#numRespuestasIncorrectas').text(numCorrectas);
-				alert("Respuesta incorrecta");
 			} else {
 				numCorrectas = parseInt($('#numRespuestasCorrectas').text()) + 1;
 				$('#numRespuestasCorrectas').text(numCorrectas);
-				alert("Bien :)");
 			}
 }
 

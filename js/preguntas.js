@@ -3,19 +3,41 @@
   */
 var preguntas = [
 	{ //1
-		pregunta: "Es la capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias <i>(ideas, imágenes, acontecimientos, sentimientos, etc.)</i>",
+		pregunta  : " 1.- ¿Cual es el nombre apropiado para referirse a una casilla en una hoja de excel?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'creatividad',
+				txt: 'ficha',
 				valida: false,
 			},
 			{
-				txt: "memoria",
+				txt: "zelda",
+				valida: false,
+			},
+			{
+				txt: "cuadro",
+				valida: false,
+			},
+			{
+				txt: "Ninguna de las anteriores",
+				valida: true,
+			},
+		]
+	},
+	{ //2
+		pregunta  : " 2.- Al documento en excel al cojunto de hojas de calculo, ¿se le de denomina?",
+		contestada: false,
+		respuestas: [
+			{
+				txt: 'biblioteaca',
+				valida: false,
+			},
+			{
+				txt: "libro",
 				valida: true,
 			},
 			{
-				txt: "habilidad",
+				txt: "bloque",
 				valida: false,
 			},
 			{
@@ -24,97 +46,43 @@ var preguntas = [
 			},
 		]
 	},
-
-	{//2
-		pregunta: "Es todo aquel producto de la mente, es decir, todo aquello que es traído a la realidad gracias a la intervención de nuestra razón.",
-		contestada: false,
-		respuestas: [
-			{
-				txt: 'pensamiento',
-				valida: true,
-			},
-			{
-				txt: "memoria",
-				valida: false,
-			},
-			{
-				txt: "habilidad",
-				valida: false,
-			},
-			{
-				txt: "creatividad",
-				valida: false,
-			},
-		]
-	},
-
-
 	{ //3
-		pregunta: "Tipo de pensamiento que va de lo general a lo particular para encontrar la razón de ser las cosas:",
+		pregunta  : " 3.- ¿Cual es la combinacion de teclas que nos sirve para ubicarnos en la celda A1?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Inductivo',
+				txt: 'alt + inicio',
 				valida: false,
 			},
 			{
-				txt: "Crítico",
+				txt: "ctrl + z",
 				valida: false,
 			},
 			{
-				txt: "Deductivo",
+				txt: "alt + f4",
+				valida: false,
+			},
+			{
+				txt: "Ninguna de las anteriores",
 				valida: true,
-			},
-			{
-				txt: "Creativo",
-				valida: false,
 			},
 		]
 	},
-
 	{ //4
-		pregunta: "Tipo de pensamiento que examina, evalúa y se pregunta el por qué de las cosas:",
+		pregunta  : " 4.- En un libro de excel esta combinación de teclas nos permite movernos a la hoja de calculo siguiente",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Inductivo',
+				txt: 'alt + inicio',
 				valida: false,
 			},
 			{
-				txt: "Deductivo",
-				valida: false,
-			},
-			{
-				txt: "Creativo",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
+				txt: "ctrl + AvPág",
 				valida: true,
 			},
-		]
-	},
-
-
-	{ // 5
-		pregunta: "Tipo de pensamiento que se usa para la creación o modificación de algo:",
-		contestada: false,
-		respuestas: [
 			{
-				txt: 'Inductivo',
+				txt: "ctrl + RegPág",
 				valida: false,
-			},
-			{
-				txt: "Crítico",
-				valida: false,
-			},
-			{
-				txt: "Deductivo",
-				valida: false,
-			},
-			{
-				txt: "Creativo",
-				valida: true,
 			},
 			{
 				txt: "Ninguna de las anteriores",
@@ -123,121 +91,217 @@ var preguntas = [
 		]
 	},
 
+	{ //5
+		pregunta  : " 5.- En un libro de excel esta combinación de teclas nos permite movernos a la hoja de calculo previa",
+		contestada: false,
+		respuestas: [
+			{
+				txt: 'alt + inicio',
+				valida: false,
+			},
+			{
+				txt: "ctrl + AvPág",
+				valida: false,
+			},
+			{
+				txt: "ctrl + RegPág",
+				valida: true,
+			},
+			{
+				txt: "Ninguna de las anteriores",
+				valida: false,
+			},
+		]
+	},
 	{ //6
-		pregunta: "Es la capacidad de producir cosas nuevas y valiosas, es la capacidad de un cerebro para llegar a conclusiones nuevas y resolver problemas en una forma original.:",
+		pregunta  : " 6.- Se encuentra entre los símbolos de matemáticos",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'pensamiento',
+				txt: ':',
 				valida: false,
 			},
 			{
-				txt: "memoria",
-				valida: false,
-			},
-			{
-				txt: "creatividad",
+				txt: "^",
 				valida: true,
 			},
 			{
-				txt: "habilidad",
+				txt: "%",
+				valida: true,
+			},
+			{
+				txt: "Ninguna de las anteriores",
 				valida: false,
 			},
 		]
 	},
 
 	{ //7
-		pregunta: "Ayuda al sujeto a codificar, registrar, retener y organizar la información.",
+		pregunta  : " 7.- Se encuentra entre los símbolos matemáticos y nos sirve para denotar un porcentaje",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'pensamiento',
+				txt: '^',
 				valida: false,
 			},
 			{
-				txt: "memoria",
+				txt: "%",
 				valida: true,
 			},
 			{
-				txt: "creatividad",
-				valida: false,
+				txt: "p",
+				valida: true,
 			},
 			{
-				txt: "habilidad",
+				txt: "Ninguna de las anteriores",
 				valida: false,
 			},
 		]
 	},
-
 	{ //8
-		pregunta: "Valora los pasatiempos, preferencia en actividades y en el mundo del trabajo.",
+		pregunta  : " 8.- Se encuentra entre los símbolos matemáticos y nos sirve para denotar una potencia",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'pensamiento',
-				valida: false,
-			},
-			{
-				txt: "memoria",
-				valida: false,
-			},
-			{
-				txt: "intereses",
+				txt: '^',
 				valida: true,
 			},
 			{
-				txt: "habilidad",
+				txt: "%",
+				valida: false,
+			},
+			{
+				txt: "p",
+				valida: true,
+			},
+			{
+				txt: "Ninguna de las anteriores",
 				valida: false,
 			},
 		]
 	},
-
 	{ //9
-		pregunta: "Es la fuerza que hace que una persona se comporte de la forma en que lo hace.",
+		pregunta  : " 9.- Se encuentra entre los símbolos de comparación",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'pensamiento',
+				txt: '+',
 				valida: false,
 			},
 			{
-				txt: "motivación",
+				txt: "=",
 				valida: true,
 			},
 			{
-				txt: "intereses",
+				txt: "p",
 				valida: false,
 			},
 			{
-				txt: "habilidad",
+				txt: "Ninguna de las anteriores",
 				valida: false,
 			},
 		]
 	},
-
-
 	{ //10
-		pregunta: "Permite buscar estrategias y herramientas que ayuden a generar diversas soluciones a un problema.",
+		pregunta  : "10.- En excel las formulas pueden tener mas de una función?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'pensamiento',
-				valida: false,
-			},
-			{
-				txt: "motivación",
-				valida: false,
-			},
-			{
-				txt: "creatividad",
+				txt: 'Cierto',
 				valida: true,
 			},
 			{
-				txt: "habilidad",
+				txt: "false",
+				valida: false,
+			},
+			{
+				txt: "Ninguna de las anteriores",
 				valida: false,
 			},
 		]
 	},
-
-
+	{ //11
+		pregunta  : "11.- En excel las formulas pueden tener mas de una función?",
+		contestada: false,
+		respuestas: [
+			{
+				txt: 'Cierto',
+				valida: true,
+			},
+			{
+				txt: "false",
+				valida: false,
+			},
+			{
+				txt: "p",
+				valida: false,
+			},
+			{
+				txt: "Ninguna de las anteriores",
+				valida: false,
+			},
+		]
+	},
+	{ //12
+		pregunta  : "12.- Entre los símbolos matemáticos,¿ cual elemento tiene mayor prioridad?",
+		contestada: false,
+		respuestas: [
+			{
+				txt: '(',
+				valida: true,
+			},
+			{
+				txt: "^",
+				valida: false,
+			},
+			{
+				txt: "*",
+				valida: false,
+			},
+			{
+				txt: "Ninguna de las anteriores",
+				valida: false,
+			},
+		]
+	},
+	{ //13
+		pregunta  : "13.- Entre los siguientes símbolos matemáticos, ¿cual elemento tiene mayor prioridad?",
+		contestada: false,
+		respuestas: [
+			{
+				txt: '-',
+				valida: false,
+			},
+			{
+				txt: "+",
+				valida: false,
+			},
+			{
+				txt: "*",
+				valida: true,
+			},
+			{
+				txt: "Ninguna de las anteriores",
+				valida: false,
+			},
+		]
+	},
+	{ //14
+		pregunta  : "14.- Seleccione la sintaxis correcta de la función SI(..)",
+		contestada: false,
+		respuestas: [
+			{
+				txt: 'SI(comparacion, es_cierta, es_falsa)',
+				valida: true,
+			},
+			{
+				txt: "SI(es_cierta, es_falsa, comparacion)",
+				valida: false,
+			},
+			{
+				txt: "Ninguna de las anteriores",
+				valida: false,
+			},
+		]
+	}
 ];
