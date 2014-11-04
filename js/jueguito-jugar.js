@@ -4,6 +4,7 @@
 var equipoIndex = 0;
 var actual = 0;
 var preguntaActual = 0;
+
 /*
  *
  */
@@ -41,10 +42,6 @@ $(function() {
 			++preguntasContestadas;
 			$('#preguntaActual').text(preguntasContestadas);
 			if (preguntasContestadas == numPreguntas) {
-				/*alert(
-					'Ha respondido ' + preguntasContestadas + ', de un total de '
-					+ numPreguntas +' jueguito ha concluido, :¬D'
-				);*/
 				$('#mostrarPregunta button')
 					.removeClass('btn-primary')
 					.addClass('disabled ')
@@ -97,11 +94,9 @@ function validarRespuesta() {
 			if(error) {
 				numCorrectas = parseInt($('#numRespuestasIncorrectas').text()) + 1;
 				$('#numRespuestasIncorrectas').text(numCorrectas);
-				alert("Respuesta incorrecta");
 			} else {
 				numCorrectas = parseInt($('#numRespuestasCorrectas').text()) + 1;
 				$('#numRespuestasCorrectas').text(numCorrectas);
-				alert("Bien :)");
 			}
 }
 
