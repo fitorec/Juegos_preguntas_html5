@@ -1,9 +1,7 @@
 /*
  * Script Juego jugar
  */
-var equipoIndex = 0;
-var actual = 0;
-var preguntaActual = 0;
+var index = 0;
 
 /*
  *
@@ -22,7 +20,8 @@ $(function() {
 			// Se encarga de encontrar de forma aleatoria una pregunta no contestada
 			var key;
 			do {
-				key = getRandomInt(0, numPreguntas -1);
+				//key = getRandomInt(0, numPreguntas -1);
+				key = index++;
 			} while(preguntas[key].contestada == true);
 			console.log('Indice actual: ' + key);
 
