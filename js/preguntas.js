@@ -3,41 +3,41 @@
   */
 var preguntas = [
 	{ //1
-		pregunta  : " 1.- ¿Cual es el nombre apropiado para referirse a una casilla en una hoja de excel?",
+		pregunta  : " 1.- ¿Para acceder la herramienta de selección podemos ocupar la tecla?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'ficha',
+				txt: 'f11',
 				valida: false,
 			},
 			{
-				txt: "zelda",
-				valida: false,
+				txt: "f1",
+				valida: true,
 			},
 			{
-				txt: "cuadro",
+				txt: "f4",
 				valida: false,
 			},
 			{
 				txt: "Ninguna de las anteriores",
-				valida: true,
+				valida: false,
 			},
 		]
 	},
 	{ //2
-		pregunta  : " 2.- Al documento en excel al cojunto de hojas de calculo, ¿se le de denomina?",
+		pregunta  : " 2.- Para obtener la diferencia entre dos objetos seleccionado podemos ocupar?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'biblioteaca',
-				valida: false,
-			},
-			{
-				txt: "libro",
+				txt: 'Ctrl + -',
 				valida: true,
 			},
 			{
-				txt: "bloque",
+				txt: "alt + -",
+				valida: false,
+			},
+			{
+				txt: "Shift + -",
 				valida: false,
 			},
 			{
@@ -47,41 +47,41 @@ var preguntas = [
 		]
 	},
 	{ //3
-		pregunta  : " 3.- ¿Cual es la combinacion de teclas que nos sirve para ubicarnos en la celda A1?",
+		pregunta  : " 3.- Para obtener la intersección entre dos objetos seleccionado podemos ocupar?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'alt + inicio',
+				txt: 'Alt + *',
 				valida: false,
 			},
 			{
-				txt: "ctrl + z",
-				valida: false,
+				txt: "Ctrl + *",
+				valida: true,
 			},
 			{
-				txt: "alt + f4",
+				txt: "Ctl + /",
 				valida: false,
 			},
 			{
 				txt: "Ninguna de las anteriores",
-				valida: true,
+				valida: false,
 			},
 		]
 	},
 	{ //4
-		pregunta  : " 4.- En un libro de excel esta combinación de teclas nos permite movernos a la hoja de calculo siguiente",
+		pregunta  : " 4.- Para acceder a la herramienta de zoom podemos ocupar:",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'alt + inicio',
+				txt: 'f2',
 				valida: false,
 			},
 			{
-				txt: "ctrl + AvPág",
+				txt: "f3",
 				valida: true,
 			},
 			{
-				txt: "ctrl + RegPág",
+				txt: "Ctl + z",
 				valida: false,
 			},
 			{
@@ -90,21 +90,20 @@ var preguntas = [
 			},
 		]
 	},
-
 	{ //5
-		pregunta  : " 5.- En un libro de excel esta combinación de teclas nos permite movernos a la hoja de calculo previa",
+		pregunta  : " 5.- Es una forma rápida de hacer un close-up:",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'alt + inicio',
+				txt: 'Ctl + f',
 				valida: false,
 			},
 			{
-				txt: "ctrl + AvPág",
+				txt: "Ctl + +",
 				valida: false,
 			},
 			{
-				txt: "ctrl + RegPág",
+				txt: "+",
 				valida: true,
 			},
 			{
@@ -114,65 +113,64 @@ var preguntas = [
 		]
 	},
 	{ //6
-		pregunta  : " 6.- Se encuentra entre los símbolos de matemáticos",
+		pregunta  : " 6.- Para agrupar los objetos seleccionados podemos ocupar:",
 		contestada: false,
 		respuestas: [
 			{
-				txt: ':',
+				txt: 'Ctl + n',
 				valida: false,
 			},
 			{
-				txt: "^",
+				txt: "Ctl + g",
 				valida: true,
 			},
 			{
-				txt: "%",
-				valida: true,
+				txt: "Alt + g",
+				valida: false,
 			},
 			{
-				txt: "Ninguna de las anteriores",
+				txt: "Shift + g",
 				valida: false,
 			},
 		]
 	},
-
 	{ //7
-		pregunta  : " 7.- Se encuentra entre los símbolos matemáticos y nos sirve para denotar un porcentaje",
+		pregunta  : " 7.- Para desagrupar los objetos seleccionados podemos ocupar:",
 		contestada: false,
 		respuestas: [
 			{
-				txt: '^',
+				txt: 'Ctl + n',
 				valida: false,
 			},
 			{
-				txt: "%",
-				valida: true,
+				txt: "Ctl + x",
+				valida: false,
 			},
 			{
-				txt: "p",
-				valida: true,
+				txt: "Alt + u",
+				valida: false,
 			},
 			{
 				txt: "Ninguna de las anteriores",
-				valida: false,
+				valida: true,
 			},
 		]
 	},
 	{ //8
-		pregunta  : " 8.- Se encuentra entre los símbolos matemáticos y nos sirve para denotar una potencia",
+		pregunta  : " 8.- Para obtener la la exclusión entre dos objetos seleccionado podemos ocupar?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: '^',
+				txt: 'Ctrl + ^',
 				valida: true,
 			},
 			{
-				txt: "%",
+				txt: "Ctrl + *",
 				valida: false,
 			},
 			{
-				txt: "p",
-				valida: true,
+				txt: "Shift + -",
+				valida: false,
 			},
 			{
 				txt: "Ninguna de las anteriores",
@@ -181,19 +179,19 @@ var preguntas = [
 		]
 	},
 	{ //9
-		pregunta  : " 9.- Se encuentra entre los símbolos de comparación",
+		pregunta  : " 9.- Es una forma rapida de reducir el zoom",
 		contestada: false,
 		respuestas: [
 			{
-				txt: '+',
+				txt: 'Ctrl + -',
 				valida: false,
 			},
 			{
-				txt: "=",
+				txt: "-",
 				valida: true,
 			},
 			{
-				txt: "p",
+				txt: "Shift + -",
 				valida: false,
 			},
 			{
@@ -203,105 +201,25 @@ var preguntas = [
 		]
 	},
 	{ //10
-		pregunta  : "10.- En excel las formulas pueden tener mas de una función?",
+		pregunta  : " 10.- Nos permite acceder a la herramienta de dibujo a mano alzada?",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Cierto',
+				txt: 'Ctrl + -',
+				valida: false,
+			},
+			{
+				txt: "Ctrl + Alt + f6",
+				valida: false,
+			},
+			{
+				txt: "Ctrl + f6",
+				valida: false,
+			},
+			{
+				txt: "f6",
 				valida: true,
-			},
-			{
-				txt: "false",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
-				valida: false,
 			},
 		]
 	},
-	{ //11
-		pregunta  : "11.- En excel las formulas pueden tener mas de una función?",
-		contestada: false,
-		respuestas: [
-			{
-				txt: 'Cierto',
-				valida: true,
-			},
-			{
-				txt: "false",
-				valida: false,
-			},
-			{
-				txt: "p",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
-				valida: false,
-			},
-		]
-	},
-	{ //12
-		pregunta  : "12.- Entre los símbolos matemáticos,¿ cual elemento tiene mayor prioridad?",
-		contestada: false,
-		respuestas: [
-			{
-				txt: '(',
-				valida: true,
-			},
-			{
-				txt: "^",
-				valida: false,
-			},
-			{
-				txt: "*",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
-				valida: false,
-			},
-		]
-	},
-	{ //13
-		pregunta  : "13.- Entre los siguientes símbolos matemáticos, ¿cual elemento tiene mayor prioridad?",
-		contestada: false,
-		respuestas: [
-			{
-				txt: '-',
-				valida: false,
-			},
-			{
-				txt: "+",
-				valida: false,
-			},
-			{
-				txt: "*",
-				valida: true,
-			},
-			{
-				txt: "Ninguna de las anteriores",
-				valida: false,
-			},
-		]
-	},
-	{ //14
-		pregunta  : "14.- Seleccione la sintaxis correcta de la función SI(..)",
-		contestada: false,
-		respuestas: [
-			{
-				txt: 'SI(comparacion, es_cierta, es_falsa)',
-				valida: true,
-			},
-			{
-				txt: "SI(es_cierta, es_falsa, comparacion)",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
-				valida: false,
-			},
-		]
-	}
 ];
