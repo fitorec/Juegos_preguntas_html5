@@ -1,21 +1,21 @@
  /**
-  *  Pregunta examen inkscape
+  *  Preguntas para BetzaBeth Ambrocio Lopez
   */
 var preguntas = [
 	{ //1
-		pregunta  : " 1.- ¿Para acceder la herramienta de selección podemos ocupar la tecla?",
+		pregunta: "Es la capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias <i>(ideas, imágenes, acontecimientos, sentimientos, etc.)</i>",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'f11',
+				txt: 'creatividad',
 				valida: false,
 			},
 			{
-				txt: "f1",
+				txt: "memoria",
 				valida: true,
 			},
 			{
-				txt: "f4",
+				txt: "habilidad",
 				valida: false,
 			},
 			{
@@ -24,65 +24,97 @@ var preguntas = [
 			},
 		]
 	},
-	{ //2
-		pregunta  : " 2.- Para obtener la diferencia entre dos objetos seleccionado podemos ocupar?",
+
+	{//2
+		pregunta: "Es todo aquel producto de la mente, es decir, todo aquello que es traído a la realidad gracias a la intervención de nuestra razón.",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Ctrl + -',
+				txt: 'pensamiento',
 				valida: true,
 			},
 			{
-				txt: "alt + -",
+				txt: "memoria",
 				valida: false,
 			},
 			{
-				txt: "Shift + -",
+				txt: "habilidad",
 				valida: false,
 			},
 			{
-				txt: "Ninguna de las anteriores",
+				txt: "creatividad",
 				valida: false,
 			},
 		]
 	},
+
+
 	{ //3
-		pregunta  : " 3.- Para obtener la intersección entre dos objetos seleccionado podemos ocupar?",
+		pregunta: "Tipo de pensamiento que va de lo general a lo particular para encontrar la razón de ser las cosas:",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Alt + *',
+				txt: 'Inductivo',
 				valida: false,
 			},
 			{
-				txt: "Ctrl + *",
+				txt: "Crítico",
+				valida: false,
+			},
+			{
+				txt: "Deductivo",
 				valida: true,
 			},
 			{
-				txt: "Ctl + /",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
+				txt: "Creativo",
 				valida: false,
 			},
 		]
 	},
+
 	{ //4
-		pregunta  : " 4.- Para acceder a la herramienta de zoom podemos ocupar:",
+		pregunta: "Tipo de pensamiento que examina, evalúa y se pregunta el por qué de las cosas:",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'f2',
+				txt: 'Inductivo',
 				valida: false,
 			},
 			{
-				txt: "f3",
+				txt: "Deductivo",
+				valida: false,
+			},
+			{
+				txt: "Creativo",
+				valida: false,
+			},
+			{
+				txt: "Ninguna de las anteriores",
 				valida: true,
 			},
+		]
+	},
+
+
+	{ // 5
+		pregunta: "Tipo de pensamiento que se usa para la creación o modificación de algo:",
+		contestada: false,
+		respuestas: [
 			{
-				txt: "Ctl + z",
+				txt: 'Inductivo',
 				valida: false,
+			},
+			{
+				txt: "Crítico",
+				valida: false,
+			},
+			{
+				txt: "Deductivo",
+				valida: false,
+			},
+			{
+				txt: "Creativo",
+				valida: true,
 			},
 			{
 				txt: "Ninguna de las anteriores",
@@ -90,136 +122,122 @@ var preguntas = [
 			},
 		]
 	},
-	{ //5
-		pregunta  : " 5.- Es una forma rápida de hacer un close-up:",
-		contestada: false,
-		respuestas: [
-			{
-				txt: 'Ctl + f',
-				valida: false,
-			},
-			{
-				txt: "Ctl + +",
-				valida: false,
-			},
-			{
-				txt: "+",
-				valida: true,
-			},
-			{
-				txt: "Ninguna de las anteriores",
-				valida: false,
-			},
-		]
-	},
+
 	{ //6
-		pregunta  : " 6.- Para agrupar los objetos seleccionados podemos ocupar:",
+		pregunta: "Es la capacidad de producir cosas nuevas y valiosas, es la capacidad de un cerebro para llegar a conclusiones nuevas y resolver problemas en una forma original.:",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Ctl + n',
+				txt: 'pensamiento',
 				valida: false,
 			},
 			{
-				txt: "Ctl + g",
+				txt: "memoria",
+				valida: false,
+			},
+			{
+				txt: "creatividad",
 				valida: true,
 			},
 			{
-				txt: "Alt + g",
-				valida: false,
-			},
-			{
-				txt: "Shift + g",
+				txt: "habilidad",
 				valida: false,
 			},
 		]
 	},
+
 	{ //7
-		pregunta  : " 7.- Para desagrupar los objetos seleccionados podemos ocupar:",
+		pregunta: "Ayuda al sujeto a codificar, registrar, retener y organizar la información.",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Ctl + n',
+				txt: 'pensamiento',
 				valida: false,
 			},
 			{
-				txt: "Ctl + x",
-				valida: false,
-			},
-			{
-				txt: "Alt + u",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
+				txt: "memoria",
 				valida: true,
+			},
+			{
+				txt: "creatividad",
+				valida: false,
+			},
+			{
+				txt: "habilidad",
+				valida: false,
 			},
 		]
 	},
+
 	{ //8
-		pregunta  : " 8.- Para obtener la la exclusión entre dos objetos seleccionado podemos ocupar?",
+		pregunta: "Valora los pasatiempos, preferencia en actividades y en el mundo del trabajo.",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Ctrl + ^',
+				txt: 'pensamiento',
+				valida: false,
+			},
+			{
+				txt: "memoria",
+				valida: false,
+			},
+			{
+				txt: "intereses",
 				valida: true,
 			},
 			{
-				txt: "Ctrl + *",
-				valida: false,
-			},
-			{
-				txt: "Shift + -",
-				valida: false,
-			},
-			{
-				txt: "Ninguna de las anteriores",
+				txt: "habilidad",
 				valida: false,
 			},
 		]
 	},
+
 	{ //9
-		pregunta  : " 9.- Es una forma rapida de reducir el zoom",
+		pregunta: "Es la fuerza que hace que una persona se comporte de la forma en que lo hace.",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Ctrl + -',
+				txt: 'pensamiento',
 				valida: false,
 			},
 			{
-				txt: "-",
+				txt: "motivación",
 				valida: true,
 			},
 			{
-				txt: "Shift + -",
+				txt: "intereses",
 				valida: false,
 			},
 			{
-				txt: "Ninguna de las anteriores",
+				txt: "habilidad",
 				valida: false,
 			},
 		]
 	},
+
+
 	{ //10
-		pregunta  : " 10.- Nos permite acceder a la herramienta de dibujo a mano alzada?",
+		pregunta: "Permite buscar estrategias y herramientas que ayuden a generar diversas soluciones a un problema.",
 		contestada: false,
 		respuestas: [
 			{
-				txt: 'Ctrl + -',
+				txt: 'pensamiento',
 				valida: false,
 			},
 			{
-				txt: "Ctrl + Alt + f6",
+				txt: "motivación",
 				valida: false,
 			},
 			{
-				txt: "Ctrl + f6",
-				valida: false,
-			},
-			{
-				txt: "f6",
+				txt: "creatividad",
 				valida: true,
+			},
+			{
+				txt: "habilidad",
+				valida: false,
 			},
 		]
 	},
+
+
 ];
