@@ -63,31 +63,27 @@ ol#pregunta-respuestas li.activo {
 <body>
 <div id="content">
 
-	<form action="" method="post" id='mostrarPregunta'>
-		<button class='btn btn-primary'>
-				<i class='icon icon-eye'></i> Mostrar Siguiente Pregunta
-				<span id='preguntaActual'>0</span>/<span id='numPreguntas'>0</span>
-		</button>
-		Respuestas correctas: <span class='bagge' id='numRespuestasCorrectas'>0</span>
-			, incorrectas <span class='bagge' id='numRespuestasIncorrectas'>0</span>
-	</form>
-
+<form action="" method="post" id='mostrarPregunta'>
+	<button class='btn btn-primary'>
+			<i class='icon icon-eye'></i> Mostrar Siguiente Pregunta
+			<span id='preguntaActual'>0</span>/<span id='numPreguntas'>0</span>
+	</button>
+	Respuestas correctas: <span class='bagge' id='numRespuestasCorrectas'>0</span>
+	, incorrectas <span class='bagge' id='numRespuestasIncorrectas'>0</span>
+</form>
 
 <div id="tablero">
 	<h1 id='pregunta-titulo'>¿Cuando sucedio tal cosa?</h1>
 <div class="progress">
-  <div id='barra-proceso' class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+  <div id='barra-progreso' class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
   </div>
 </div>
 	<ol id="pregunta-respuestas">
-		<li id='item-1'>Respuesta 1</li>
-		<li id='item-2'>Respuesta 2</li>
-		<li id='item-3' class='activo'>Respuesta 3</li>
-		<li id='item-4'>Respuesta 4</li>
 	</ol>
 	<a href='#' class='btn btn-success' id='btn-responder'>Responder</a> |
 	<a href='#' class='btn btn-warning' id='btn-ceder-turno'>Ceder el turno</a>
 </div>
+
 </div><!-- end content -->
 </body>
 </html>

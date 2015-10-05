@@ -3,25 +3,25 @@
   */
 var preguntas = [
 	{ //1
-		pregunta: "Es la conversión a binario de <code>0.75</code>: ",
+		pregunta: "Es la capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias <i>(ideas, imágenes, acontecimientos, sentimientos, etc.)</i>",
 		contestada: false,
 		respuestas: [
 			{
-				txt: '0.0110',
+				txt: 'creatividad',
 				valida: false,
 			},
 			{
-				txt: "0.0101",
-				valida: false,
-			},
-			{
-				txt: "0.1100",
+				txt: "memoria",
 				valida: true,
 			},
 			{
-				txt: "0.1101",
+				txt: "habilidad",
 				valida: false,
-			}
+			},
+			{
+				txt: "Ninguna de las anteriores",
+				valida: false,
+			},
 		]
 	},
 

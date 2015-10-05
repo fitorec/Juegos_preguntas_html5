@@ -3,6 +3,12 @@
  */
 var index = 0;
 
+var Juego = {
+	randomMode : false,
+	defaultOptions: {
+		
+	},
+}
 /*
  *
  */
@@ -12,16 +18,20 @@ $(function() {
 	// Handler for .ready() called.
 	$tablero = $('#tablero');
 	$tablero.fadeOut();
-	var $barra = $('#barra-proceso');
+	var $barra = $('#barra-progreso');
 	$('#mostrarPregunta').submit(
 		function (event) {
 			var numPreguntas = preguntas.length;
 			var preguntasContestadas = parseInt($('#preguntaActual').text());
 			// Se encarga de encontrar de forma aleatoria una pregunta no contestada
 			var key;
+			var index = 0;
 			do {
-				//key = getRandomInt(0, numPreguntas -1);
-				key = index++;
+				if(Juego.randomMode) {
+					key = getRandomInt(0, numPreguntas -1);
+				} else {
+					key = index++;
+				}
 			} while(preguntas[key].contestada == true);
 			console.log('Indice actual: ' + key);
 
@@ -91,17 +101,17 @@ function validarRespuesta() {
 				}
 			});
 			if(error) {
-				numCorrectas = parseInt($('#numRespuestasIncorrectas').text()) + 1;
-				$('#numRespuestasIncorrectas').text(numCorrectas);
+				var numInCorrectas = parseInt($('#numRespuestasIncorrectas').text()) + 1;
+				$('#numRespuestasIncorrectas').text(numInCorrectas);
 			} else {
-				numCorrectas = parseInt($('#numRespuestasCorrectas').text()) + 1;
+				var numCorrectas = parseInt($('#numRespuestasCorrectas').text()) + 1;
 				$('#numRespuestasCorrectas').text(numCorrectas);
 			}
 }
 
 function ocultarTablero() {
-	validarRespuesta();
 	actualizarBarra(100);
+	validarRespuesta();
 	$('#tablero').fadeOut();
 	$('#mostrarPregunta').fadeIn();
 }
@@ -112,19 +122,18 @@ function mostrarTablero() {
 	$('#mostrarPregunta').fadeOut();
 }
 
-function actualizarBarra(proceso) {
-	if (proceso<0 || proceso>100) {
+function actualizarBarra(progreso) {
+	if (progreso<0 || progreso>100) {
 		return;
 	}
-	var $barra = $('#barra-proceso');
-	$barra.attr('aria-valuenow', proceso);
-	$barra.css('width', proceso + '%');
+	var $barra = $('#barra-progreso');
+	$barra.attr('aria-valuenow', progreso);
+	$barra.css('width', progreso + '%');
 }
 
 function actualizarFicha() {
-	var $barra = $('#barra-proceso');
+	var $barra = $('#barra-progreso');
 	var ancho = $barra.attr('aria-valuenow');
-	//console.log('Ancho' +ancho );
 	if(ancho < 100) {
 		ancho++;
 		actualizarBarra(ancho);
@@ -134,9 +143,6 @@ function actualizarFicha() {
 	}
 }
 
-/*
- * Soy un perdedor
- */
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
